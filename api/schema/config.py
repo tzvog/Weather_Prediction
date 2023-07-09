@@ -1,1 +1,2 @@
-VALID_WEATHER_PARAMETERS = []
+VALID_WEATHER_PARAMETERS = ['temperature', 'humidity',
+                            'windSpeed', 'rainIntensity']
