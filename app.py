@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask
 from api.route.WeatherView import WeatherView
 from api.services.error_handlers import not_found_error, bad_request_error, \
     internal_server_error
