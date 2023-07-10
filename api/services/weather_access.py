@@ -4,7 +4,7 @@ from api.schema.config import TOKEN, NOT_FOUND_CODE,\
     RULE_OPERATORS, VALID_OPERATORS
 from flask import abort
 from datetime import datetime, timedelta
-from api.model.rule import Rule
+from api.model.filter_rule import FilterRule
 
 HOUR_INTERVAL_ADDITION = 72
 
@@ -34,18 +34,19 @@ class WeatherAccess:
         with its corresponding function
         """
 
+        # values to search when invoking the API
         weather_values_to_search = set()
-        all_rules = []
+        filter_rules = []
 
         rules_list = full_rules_string.split(',')
 
         # creates objects for our rules
         for rule in rules_list:
-            all_rules.append(Rule(rule))
+            rule_to_add = FilterRule(rule)
+            filter_rules.append(rule_to_add)
+            weather_values_to_search.add(rule_to_add.weather_parameter)
 
-
-
-        return ','.join(weather_values_to_search), rules_sets
+        return ','.join(weather_values_to_search), filter_rules
 
     @staticmethod
     def __validate_operator(operator):

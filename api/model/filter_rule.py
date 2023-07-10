@@ -2,7 +2,7 @@ from api.schema.config import BAD_REQUEST_CODE,\
     VALID_WEATHER_PARAMETERS, RULE_OPERATORS
 from flask import abort
 
-class Rule:
+class FilterRule:
 
     def __init__(self, rule_str):
 
