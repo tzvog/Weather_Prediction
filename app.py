@@ -1,5 +1,5 @@
 from flask import Flask
-from api.route.WeatherView import WeatherView
+from api.route.weather_view import WeatherView
 from api.services.error_handlers import error
 
 app = Flask(__name__)

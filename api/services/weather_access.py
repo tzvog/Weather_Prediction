@@ -4,6 +4,7 @@ from api.schema.config import TOKEN, NOT_FOUND_CODE,\
     RULE_OPERATORS, VALID_OPERATORS
 from flask import abort
 from datetime import datetime, timedelta
+from api.model.rule import Rule
 
 HOUR_INTERVAL_ADDITION = 72
 
@@ -34,43 +35,15 @@ class WeatherAccess:
         """
 
         weather_values_to_search = set()
-        rules_sets = []
+        all_rules = []
 
         rules_list = full_rules_string.split(',')
 
         # creates objects for our rules
         for rule in rules_list:
+            all_rules.append(Rule(rule))
 
-            # checks which operator we are working with
-            if RULE_OPERATORS[0] in rule:
-                rule_operator = RULE_OPERATORS[0]
-            elif RULE_OPERATORS[1] in rule:
-                rule_operator = RULE_OPERATORS[1]
-            else:
-                abort(BAD_REQUEST_CODE, "Invalid rule provided, rule has an incorrect operator")
 
-            rule_break_down = rule.split(rule_operator)
-
-            # checks that we only have one split there
-            if len(rule_break_down) != 2:
-                abort(BAD_REQUEST_CODE, "Invalid rule provided, bad rule format")
-
-            # checks that the weather is permited
-            if not rule_break_down[0] in VALID_WEATHER_PARAMETERS:
-                abort(BAD_REQUEST_CODE, "Invalid rule provided, bad weather param")
-
-            # adds to the set of values we are going to check
-            weather_values_to_search.add(rule_break_down[0])
-
-            # try converting from string to integer
-            try:
-                comparison_value = int(rule_break_down[1])
-            except:
-                abort(BAD_REQUEST_CODE, "Invalid rule provided, bad comparison value")
-
-            # adds the rule we are going to work with
-            rules_sets.append((rule_break_down[0],
-                               rule_operator, comparison_value))
 
         return ','.join(weather_values_to_search), rules_sets
 

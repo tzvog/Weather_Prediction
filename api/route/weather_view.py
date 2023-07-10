@@ -1,6 +1,6 @@
 from flask import abort
 from flask.views import MethodView
-from api.services.WeatherAccess import WeatherAccess
+from api.services.weather_access import WeatherAccess
 
 # from flask_inputs import Inputs
 # from flask_inputs.validators import JsonSchema
@@ -20,6 +20,6 @@ class WeatherView(MethodView):
 
     def get(self):
 
-        self.weather_access.get()
+        self.weather_access.get("bad_places", "temperature>30", None)
 
         return "this is me"
