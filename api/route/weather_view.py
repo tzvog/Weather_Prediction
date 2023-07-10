@@ -20,6 +20,8 @@ class WeatherView(MethodView):
 
     def get(self):
 
-        self.weather_access.get("bad_places", "temperature>30", None)
+        # self.weather_access.get("bad_places", "temperature>30", None)
+        return self.weather_access.get('40.75872069597532,-73.98529171943665',
+                                    "temperature>30", None)
 
-        return "this is me"
+

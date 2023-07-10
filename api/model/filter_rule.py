@@ -1,5 +1,5 @@
 from api.schema.config import BAD_REQUEST_CODE,\
-    VALID_WEATHER_PARAMETERS, RULE_OPERATORS
+    VALID_WEATHER_PARAMETERS, RULE_OPERATORS, INTERNAL_SERVER_ERROR_CODE
 from flask import abort
 
 class FilterRule:
@@ -17,6 +17,7 @@ class FilterRule:
 
         self.weather_parameter = self.__extract_weather_parameter(rule_break_down[0])
         self.comparison_value = self.__extract_comparison_value(rule_break_down[1])
+        self.filter_function = self.__create_filter_function()
 
     def __extract_weather_parameter(self, weather_parameter):
         """
@@ -63,3 +64,40 @@ class FilterRule:
                   "Invalid rule provided, bad comparison value")
 
         return comparison_value
+
+    def __create_filter_function(self):
+        """
+        creates the comparison function
+        :return: the comparison function
+        """
+
+        if self.rule_operator == RULE_OPERATORS[0]:
+
+            if self.weather_parameter == VALID_WEATHER_PARAMETERS[0]:
+                return lambda x: x[VALID_WEATHER_PARAMETERS[0]] < self.comparison_value
+            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[1]:
+                return lambda x: x[VALID_WEATHER_PARAMETERS[1]] < self.comparison_value
+            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[2]:
+                return lambda x: x[VALID_WEATHER_PARAMETERS[2]] < self.comparison_value
+            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[3]:
+                return lambda x: [VALID_WEATHER_PARAMETERS[3]] < self.comparison_value
+            else:
+                abort(INTERNAL_SERVER_ERROR_CODE,
+                      'Error could not find right filter function')
+
+        elif self.rule_operator == RULE_OPERATORS[1]:
+
+            if self.weather_parameter == VALID_WEATHER_PARAMETERS[0]:
+                return lambda x: x[VALID_WEATHER_PARAMETERS[0]] > self.comparison_value
+            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[1]:
+                return lambda x: x[VALID_WEATHER_PARAMETERS[1]] > self.comparison_value
+            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[2]:
+                return lambda x: x[VALID_WEATHER_PARAMETERS[2]] > self.comparison_value
+            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[3]:
+                return lambda x: x[VALID_WEATHER_PARAMETERS[3]] > self.comparison_value
+            else:
+                abort(INTERNAL_SERVER_ERROR_CODE,
+                      'Error could not find right filter function')
+
+        abort(INTERNAL_SERVER_ERROR_CODE,
+              'Error could not find right filter function')
