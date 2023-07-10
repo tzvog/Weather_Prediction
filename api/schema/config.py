@@ -1,6 +1,8 @@
 VALID_WEATHER_PARAMETERS = ['temperature', 'humidity',
                             'windSpeed', 'rainIntensity']
 
+VALID_OPERATORS = ['AND', 'OR']
+
 TOKEN = '8kpflUrZQw5WscH8qg1OjJYBNTRx0k5E'
 
 RULE_OPERATORS = ['<', '>']
