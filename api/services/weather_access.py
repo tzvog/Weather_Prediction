@@ -4,7 +4,7 @@ from api.schema.config import TOKEN, NOT_FOUND_CODE,\
 from flask import abort, jsonify
 from datetime import datetime, timedelta
 from api.model.filter_rule import FilterRule
-from api.services.rule_function_facotory import create_rules_function
+from api.services.rule_function_aggregation_factory import aggregate_rules_function
 import json
 
 HOUR_INTERVAL_ADDITION = 72
@@ -70,7 +70,7 @@ class WeatherAccess:
 
     def get_timeline_from_text(self, rule_list, response, valid_operator):
 
-        function_to_operate = create_rules_function(rule_list, valid_operator)
+        function_to_operate = aggregate_rules_function(rule_list, valid_operator)
 
         response_in_json_format = json.loads(response)
         timelines = response_in_json_format.get('data', {}).get('timelines', {})
