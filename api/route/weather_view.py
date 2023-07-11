@@ -1,27 +1,33 @@
-from flask import abort
+from flask import request, abort
 from flask.views import MethodView
 from api.services.weather_access import WeatherAccess
+from api.schema.config import BAD_REQUEST_CODE
+import threading
 
-# from flask_inputs import Inputs
-# from flask_inputs.validators import JsonSchema
-#
-# class MyInputValidation(Inputs):
-#     json = [JsonSchema(schema={
-#         'type': 'object',
-#         'properties': {
-#             'parameter': {'type': 'string'}
-#         },
-#         'required': ['parameter']
-#     })]
+REQUIRED_PARAMS = {
+        'location': str,
+        'rule': str
+    }
 
 class WeatherView(MethodView):
 
     weather_access = WeatherAccess()
+    lock = threading.Lock()
 
     def get(self):
 
-        # self.weather_access.get("bad_places", "temperature>30", None)
-        return self.weather_access.get('40.75872069597532,-73.98529171943665',
-                                    "temperature>30", None)
+        # checks if we have all the required params and validity of type
+        for param, param_type in REQUIRED_PARAMS.items():
 
+            # the param is missing
+            if param not in request.args:
+                abort(BAD_REQUEST_CODE, f"Missing required parameter: {param}")
 
+            # the param is not in the right type
+            if not isinstance(request.args[param], param_type):
+                abort(BAD_REQUEST_CODE, f"Invalid type for parameter: {param}. Expected type: {param_type.__name__}")
+
+        with self.lock:
+            return self.weather_access.get(request.args.get('location'),
+                                    request.args.get('rule'),
+                                    request.args.get('operator'))
