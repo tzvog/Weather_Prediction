@@ -141,15 +141,7 @@ class WeatherAccess:
 
         time_line = self.get_timeline_from_text(list_of_rules, response.text, valid_operator)
 
-        return_val = {
-            "status": "success",
-            "data":
-                {
-                    "timeline": time_line
-                }
-        }
-
-        return jsonify(return_val)
+        return jsonify({"status": "success",  "data": {"timeline": time_line}})
 
 # if __name__ == '__main__':
 #     k = WeatherAccess().get('40.75872069597532,-73.98529171943665', "temperature>30", None)

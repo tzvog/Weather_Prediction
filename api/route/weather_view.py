@@ -27,6 +27,8 @@ class WeatherView(MethodView):
             if not isinstance(request.args[param], param_type):
                 abort(BAD_REQUEST_CODE, f"Invalid type for parameter: {param}. Expected type: {param_type.__name__}")
 
+        # locks so we don't have an issue with thread race in case of
+        # request to switch source
         with self.lock:
             return self.weather_access.get(request.args.get('location'),
                                     request.args.get('rule'),
