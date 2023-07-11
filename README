@@ -28,3 +28,11 @@ app
 
 to run it either use your IDE and run the app.py page
 or use the python app.py command in your terminal
+
+===========
+Assumptions
+===========
+
+1. access to the token will not be stored locally within a config file
+just for this demo it has been
+2. the same parameter can be filtered many times eg: temperature>30 or temperature<30
