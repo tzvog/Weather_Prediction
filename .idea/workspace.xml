@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25ebcdcf-343d-4686-b6ff-5e52831a82be" name="Default Changelist" comment="move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/route/weather_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/route/weather_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/services/weather_access.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/weather_access.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688921002589</updated>
-      <workItem from="1688921061977" duration="25791000" />
+      <workItem from="1688921061977" duration="29525000" />
     </task>
     <task id="LOCAL-00001" summary="api call works">
       <created>1688929682186</created>
@@ -176,46 +175,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1689009399473" />
-    <state width="1237" height="45" key="GridCell.Tab.0.bottom" timestamp="1689058704332">
+    <state width="1237" height="191" key="GridCell.Tab.0.bottom" timestamp="1689063351312">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="45" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689058704332" />
-    <state width="1237" height="45" key="GridCell.Tab.0.center" timestamp="1689058704332">
+    <state width="1237" height="191" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689063351312" />
+    <state width="1237" height="191" key="GridCell.Tab.0.center" timestamp="1689063351312">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="45" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1689058704332" />
-    <state width="1237" height="45" key="GridCell.Tab.0.left" timestamp="1689058704332">
+    <state width="1237" height="191" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1689063351312" />
+    <state width="1237" height="191" key="GridCell.Tab.0.left" timestamp="1689063351312">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="45" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1689058704332" />
-    <state width="1237" height="45" key="GridCell.Tab.0.right" timestamp="1689058704332">
+    <state width="1237" height="191" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1689063351312" />
+    <state width="1237" height="191" key="GridCell.Tab.0.right" timestamp="1689063351312">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="45" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1689058704332" />
-    <state width="1237" height="146" key="GridCell.Tab.1.bottom" timestamp="1689058494784">
+    <state width="1237" height="191" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1689063351312" />
+    <state width="1237" height="385" key="GridCell.Tab.1.bottom" timestamp="1689063345120">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="146" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689058494784" />
-    <state width="1237" height="146" key="GridCell.Tab.1.center" timestamp="1689058494784">
+    <state width="1237" height="385" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689063345120" />
+    <state width="1237" height="385" key="GridCell.Tab.1.center" timestamp="1689063345120">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="146" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1689058494784" />
-    <state width="1237" height="146" key="GridCell.Tab.1.left" timestamp="1689058494784">
+    <state width="1237" height="385" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1689063345120" />
+    <state width="1237" height="385" key="GridCell.Tab.1.left" timestamp="1689063345120">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="146" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1689058494784" />
-    <state width="1237" height="146" key="GridCell.Tab.1.right" timestamp="1689058494784">
+    <state width="1237" height="385" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1689063345120" />
+    <state width="1237" height="385" key="GridCell.Tab.1.right" timestamp="1689063345120">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="146" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1689058494784" />
+    <state width="1237" height="385" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1689063345120" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1688924314965">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -224,10 +223,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="62" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1689006955126" />
-    <state width="648" height="348" key="XDebugger.FullValuePopup" timestamp="1689057881535">
+    <state width="648" height="348" key="XDebugger.FullValuePopup" timestamp="1689063136122">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="648" height="348" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1689057881535" />
+    <state width="648" height="348" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1689063136122" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1689009226579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -238,26 +237,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api/services/weather_access.py</url>
-          <line>143</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/services/weather_access.py</url>
-          <line>136</line>
-          <option name="timeStamp" value="22" />
+          <line>145</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="json.loads(response.text)" language="Python" />
+        <watch expression="json.loads(response.text).get('data').get('timelines')[0]" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tomorrow_io_test$WeatherAccess.coverage" NAME="WeatherAccess Coverage Results" MODIFIED="1689006696129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/services" />
     <SUITE FILE_PATH="coverage/tomorrow_io_test$tomorrow_io_test.coverage" NAME="tomorrow_io_test Coverage Results" MODIFIED="1688925223186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/tomorrow_io_test$weather_access__1_.coverage" NAME="weather_access (1) Coverage Results" MODIFIED="1689057868272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/services" />
-    <SUITE FILE_PATH="coverage/tomorrow_io_test$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1689058704325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tomorrow_io_test$weather_access__1_.coverage" NAME="weather_access (1) Coverage Results" MODIFIED="1689063286431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/services" />
+    <SUITE FILE_PATH="coverage/tomorrow_io_test$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1689063351306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

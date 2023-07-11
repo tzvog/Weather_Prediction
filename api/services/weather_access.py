@@ -7,7 +7,7 @@ from api.model.filter_rule import FilterRule
 from api.services.rule_function_aggregation_factory import aggregate_rules_function
 import json
 
-HOUR_INTERVAL_ADDITION = 72
+HOUR_INTERVAL_ADDITION = 71
 
 class WeatherAccess:
 
@@ -64,9 +64,7 @@ class WeatherAccess:
         if operator not in VALID_OPERATORS:
             abort(BAD_REQUEST_CODE, "Invalid operator provided, please use 'AND' or 'OR'")
 
-
-
-
+        return operator
 
     def get_timeline_from_text(self, rule_list, response, valid_operator):
 
@@ -114,8 +112,11 @@ class WeatherAccess:
                 most_recent["startTime"] = interval["startTime"]
                 most_recent["condition_met"] = current_condtion
 
-        most_recent["endTime"] = end_time
-        return_val_list.append(most_recent)
+        # adds the last value only if the change was
+        # not registered via the last result
+        if not most_recent["startTime"] == end_time:
+            most_recent["endTime"] = end_time
+            return_val_list.append(most_recent)
 
         return return_val_list
 
@@ -143,5 +144,5 @@ class WeatherAccess:
 
         return jsonify({"status": "success",  "data": {"timeline": time_line}})
 
-# if __name__ == '__main__':
-#     k = WeatherAccess().get('40.75872069597532,-73.98529171943665', "temperature>30", None)
+if __name__ == '__main__':
+    k = WeatherAccess().get('40.75872069597532,-73.98529171943665', "temperature>25,temperature<24", 'OR')
