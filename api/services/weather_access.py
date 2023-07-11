@@ -25,9 +25,8 @@ class WeatherAccess:
         response = requests.get(url=URL)
 
         # checks if we got an error calling the API
-        if response.status_code == INTERNAL_SERVER_ERROR_CODE or \
-                response.status_code == BAD_REQUEST_CODE or \
-                response.status_code == NOT_FOUND_CODE:
+        if response.status_code in [INTERNAL_SERVER_ERROR_CODE,
+                                    BAD_REQUEST_CODE, NOT_FOUND_CODE]:
             abort(response.status_code, response.text)
 
         time_line = self.__create_timeline(list_of_rules,
@@ -80,6 +79,7 @@ class WeatherAccess:
         :return: the valid operator to use
         """
 
+        # giving it a default value
         if operator is None:
             return VALID_OPERATORS[0]
 
@@ -163,8 +163,6 @@ class WeatherAccess:
             abort(NOT_FOUND_CODE, 'data not found')
 
         return start_time, end_time, intervals
-
-
 
 if __name__ == '__main__':
     k = WeatherAccess().get('40.75872069597532,-73.98529171943665', "temperature>0", 'OR')
