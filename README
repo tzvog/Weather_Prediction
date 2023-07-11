@@ -1,0 +1,30 @@
+====================
+Install Requirements  
+====================
+flask
+requests
+flask.views
+
+===================
+How to work the API
+===================
+
+Ideally this was written within an IDE (pycharm) all that is
+needed to be done make sure the app is within the following structure
+
+-- api
+    -- model
+        -- filter_rule
+    -- route
+        -- weather_view
+    -- schema
+        -- config
+    -- services
+        -- error_handlers
+        -- rule_function_aggregation_factory
+        -- weather_access
+-- venv
+app
+
+to run it either use your IDE and run the app.py page
+or use the python app.py command in your terminal
