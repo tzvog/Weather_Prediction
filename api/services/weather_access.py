@@ -1,10 +1,10 @@
 import requests
 from api.schema.config import TOKEN, NOT_FOUND_CODE,\
-    BAD_REQUEST_CODE, INTERNAL_SERVER_ERROR_CODE, VALID_WEATHER_PARAMETERS, \
-    RULE_OPERATORS, VALID_OPERATORS
+    BAD_REQUEST_CODE, INTERNAL_SERVER_ERROR_CODE, VALID_OPERATORS
 from flask import abort, jsonify
 from datetime import datetime, timedelta
 from api.model.filter_rule import FilterRule
+from api.services.rule_function_facotory import create_rules_function
 import json
 
 HOUR_INTERVAL_ADDITION = 72
@@ -64,31 +64,13 @@ class WeatherAccess:
         if operator not in VALID_OPERATORS:
             abort(BAD_REQUEST_CODE, "Invalid operator provided, please use 'AND' or 'OR'")
 
-    @staticmethod
-    def all_func_wrapper(rule_list):
-        return lambda interval: all(func.filter_function(interval) for func in rule_list)
 
-    @staticmethod
-    def any_func_wrapper(rule_list):
-        return lambda interval: any(func.filter_function(interval) for func in rule_list)
-
-
-    def create_rules_function(self, rules_list, valid_operator):
-
-        if valid_operator == VALID_OPERATORS[0]:
-            return self.all_func_wrapper(rules_list)
-        elif valid_operator == VALID_OPERATORS[1]:
-            return self.any_func_wrapper(rules_list)
-
-        abort(BAD_REQUEST_CODE,
-              "cannot create rule from function")
 
 
 
     def get_timeline_from_text(self, rule_list, response, valid_operator):
 
-        function_to_operate = self.create_rules_function(rule_list,
-                                                         valid_operator)
+        function_to_operate = create_rules_function(rule_list, valid_operator)
 
         response_in_json_format = json.loads(response)
         timelines = response_in_json_format.get('data', {}).get('timelines', {})
