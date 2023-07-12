@@ -37,6 +37,7 @@
   <ol>
     <li>Access to the token will not be stored locally within a config file. Just for this demo, it has been.</li>
     <li>The same parameter can be filtered many times, e.g., temperature>30 or temperature<30.</li>
+    <li>no need to specifically test if an operator appears twice within a rule</li>
   </ol>
 </body>
 

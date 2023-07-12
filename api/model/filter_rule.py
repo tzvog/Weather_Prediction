@@ -39,7 +39,6 @@ class FilterRule:
         :return: what operator we are going to use
         """
 
-        # TODO check when both operators appear that could be an error
         # checks which operator we are working with
         if RULE_OPERATORS[0] in rule_str:
             return RULE_OPERATORS[0]
@@ -67,37 +66,22 @@ class FilterRule:
 
     def __create_filter_function(self):
         """
-        creates the comparison function
-        :return: the comparison function
+        Creates the comparison function
+        :return: The comparison function
         """
 
+        def compare_less_than(x):
+            return x[self.weather_parameter] < self.comparison_value
+
+        def compare_greater_than(x):
+            return x[self.weather_parameter] > self.comparison_value
+
         if self.rule_operator == RULE_OPERATORS[0]:
-
-            if self.weather_parameter == VALID_WEATHER_PARAMETERS[0]:
-                return lambda x: x[VALID_WEATHER_PARAMETERS[0]] < self.comparison_value
-            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[1]:
-                return lambda x: x[VALID_WEATHER_PARAMETERS[1]] < self.comparison_value
-            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[2]:
-                return lambda x: x[VALID_WEATHER_PARAMETERS[2]] < self.comparison_value
-            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[3]:
-                return lambda x: [VALID_WEATHER_PARAMETERS[3]] < self.comparison_value
-            else:
-                abort(INTERNAL_SERVER_ERROR_CODE,
-                      'Error could not find right filter function')
-
+            if self.weather_parameter in VALID_WEATHER_PARAMETERS:
+                return compare_less_than
         elif self.rule_operator == RULE_OPERATORS[1]:
-
-            if self.weather_parameter == VALID_WEATHER_PARAMETERS[0]:
-                return lambda x: x[VALID_WEATHER_PARAMETERS[0]] > self.comparison_value
-            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[1]:
-                return lambda x: x[VALID_WEATHER_PARAMETERS[1]] > self.comparison_value
-            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[2]:
-                return lambda x: x[VALID_WEATHER_PARAMETERS[2]] > self.comparison_value
-            elif self.weather_parameter == VALID_WEATHER_PARAMETERS[3]:
-                return lambda x: x[VALID_WEATHER_PARAMETERS[3]] > self.comparison_value
-            else:
-                abort(INTERNAL_SERVER_ERROR_CODE,
-                      'Error could not find right filter function')
+            if self.weather_parameter in VALID_WEATHER_PARAMETERS:
+                return compare_greater_than
 
         abort(INTERNAL_SERVER_ERROR_CODE,
-              'Error could not find right filter function')
+              'Error: Could not find the right filter function')
