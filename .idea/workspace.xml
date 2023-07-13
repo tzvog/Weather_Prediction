@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25ebcdcf-343d-4686-b6ff-5e52831a82be" name="Default Changelist" comment="move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/weather_access.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/weather_access.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +144,7 @@
       <workItem from="1689076123753" duration="236000" />
       <workItem from="1689186442575" duration="1300000" />
       <workItem from="1689188362594" duration="1030000" />
-      <workItem from="1689225877797" duration="4080000" />
+      <workItem from="1689225877797" duration="4896000" />
     </task>
     <task id="LOCAL-00001" summary="api call works">
       <created>1688929682186</created>
@@ -185,26 +184,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1689009399473" />
-    <state width="1237" height="161" key="GridCell.Tab.0.bottom" timestamp="1689231470251">
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom" timestamp="1689231532545">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689231470251" />
-    <state width="1237" height="161" key="GridCell.Tab.0.center" timestamp="1689231470250">
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689231532545" />
+    <state width="1237" height="161" key="GridCell.Tab.0.center" timestamp="1689231532545">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1689231470250" />
-    <state width="1237" height="161" key="GridCell.Tab.0.left" timestamp="1689231470250">
+    <state width="1237" height="161" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1689231532545" />
+    <state width="1237" height="161" key="GridCell.Tab.0.left" timestamp="1689231532545">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1689231470250" />
-    <state width="1237" height="161" key="GridCell.Tab.0.right" timestamp="1689231470250">
+    <state width="1237" height="161" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1689231532545" />
+    <state width="1237" height="161" key="GridCell.Tab.0.right" timestamp="1689231532545">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="158" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1689231470250" />
+    <state width="1237" height="161" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1689231532545" />
     <state width="1237" height="50" key="GridCell.Tab.1.bottom" timestamp="1689231325606">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -255,20 +254,6 @@
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1689231124367" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/services/weather_access.py</url>
-          <line>167</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/services/weather_access.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="json.loads(response.text).get('data').get('timelines')[0]" language="Python" />
