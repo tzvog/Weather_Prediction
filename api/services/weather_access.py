@@ -7,7 +7,7 @@ from api.services.filter_rule import FilterRule
 from api.services.rule_function_aggregation_factory import aggregate_rules_function
 import json
 
-HOUR_INTERVAL_ADDITION = 71
+HOUR_INTERVAL_ADDITION = 72
 
 class WeatherAccess:
 

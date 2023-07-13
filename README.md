@@ -35,5 +35,6 @@
   <ol>
     <li>Access to the token will not be stored locally within a config file. Just for this demo, it has been.</li>
     <li>The same parameter can be filtered many times as wanted, e.g., temperature>30 or temperature<30.</li>
+    <li> assuming 72 hours from now starts from beginning of the current hour</li>
   </ol>
 </body>
