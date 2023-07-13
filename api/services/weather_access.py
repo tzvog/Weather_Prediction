@@ -1,11 +1,12 @@
 import requests
 from api.schema.config import TOKEN, NOT_FOUND_CODE,\
-    BAD_REQUEST_CODE, INTERNAL_SERVER_ERROR_CODE, VALID_OPERATORS
+    BAD_REQUEST_CODE, INTERNAL_SERVER_ERROR_CODE, VALID_OPERATORS,VALID_REQUEST
 from flask import abort, jsonify
 from datetime import datetime, timedelta
 from api.services.filter_rule import FilterRule
 from api.services.rule_function_aggregation_factory import aggregate_rules_function
 import json
+
 
 HOUR_INTERVAL_ADDITION = 72
 
@@ -31,10 +32,13 @@ class WeatherAccess:
         URL = f"https://api.tomorrow.io/v4/timelines?location={lat},{lon}&fields={fields}&startTime={start_date.isoformat()}&endTime={end_date.isoformat()}&timesteps=1h&units=metric&apikey={TOKEN}"
         response = requests.get(url=URL)
 
+        # TODO check if we get any type of error
         # checks if we got an error calling the API
         if response.status_code in [INTERNAL_SERVER_ERROR_CODE,
                                     BAD_REQUEST_CODE, NOT_FOUND_CODE]:
             abort(response.status_code, response.text)
+        # if response.status_code != VALID_REQUEST:
+        #     jsonify(response.status_code, response.text)
 
         time_line = self.__create_timeline(list_of_rules,
                                            response.text, valid_operator)
