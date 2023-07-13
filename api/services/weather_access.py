@@ -3,7 +3,7 @@ from api.schema.config import TOKEN, NOT_FOUND_CODE,\
     BAD_REQUEST_CODE, INTERNAL_SERVER_ERROR_CODE, VALID_OPERATORS
 from flask import abort, jsonify
 from datetime import datetime, timedelta
-from api.model.filter_rule import FilterRule
+from api.services.filter_rule import FilterRule
 from api.services.rule_function_aggregation_factory import aggregate_rules_function
 import json
 
@@ -12,6 +12,13 @@ HOUR_INTERVAL_ADDITION = 71
 class WeatherAccess:
 
     def get(self, location, rule, operator):
+        """
+        this function pulls the requested weather predictions
+        :param location: the location we are looking at
+        :param rule: what rule we are filtering by
+        :param operator: what operator to use
+        :return: a return message with
+        """
 
         # creates the date needed to filter for
         start_date = datetime.now()
@@ -163,6 +170,3 @@ class WeatherAccess:
             abort(NOT_FOUND_CODE, 'data not found')
 
         return start_time, end_time, intervals
-
-if __name__ == '__main__':
-    k = WeatherAccess().get('40.75872069597532,-73.98529171943665', "temperature>0", 'OR')
