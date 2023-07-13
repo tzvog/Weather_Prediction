@@ -9,6 +9,8 @@ import json
 
 
 HOUR_INTERVAL_ADDITION = 72
+URL = "https://api.tomorrow.io/v4/timelines?location={lat},{lon}&fields={fields}&startTime={start_date}&endTime={end_date}&timesteps=1h&units=metric&apikey={token}"
+
 
 class WeatherAccess:
 
@@ -29,16 +31,18 @@ class WeatherAccess:
         fields, list_of_rules = self.__validate_and_create_list_of_functions(rule)
         valid_operator = self.__validate_operator(operator)
 
-        URL = f"https://api.tomorrow.io/v4/timelines?location={lat},{lon}&fields={fields}&startTime={start_date.isoformat()}&endTime={end_date.isoformat()}&timesteps=1h&units=metric&apikey={TOKEN}"
-        response = requests.get(url=URL)
+        # formats the url to our parameters
+        formatted_url = URL.format(lat=lat, lon=lon, fields=fields,
+                                  start_date=start_date.isoformat(),
+                                  end_date=end_date.isoformat(),
+                                  token=TOKEN)
 
-        # TODO check if we get any type of error
-        # checks if we got an error calling the API
-        if response.status_code in [INTERNAL_SERVER_ERROR_CODE,
-                                    BAD_REQUEST_CODE, NOT_FOUND_CODE]:
-            abort(response.status_code, response.text)
-        # if response.status_code != VALID_REQUEST:
-        #     jsonify(response.status_code, response.text)
+        response = requests.get(url=formatted_url)
+
+        # if the server did not give a valid request answer
+        if response.status_code != VALID_REQUEST:
+            abort(response.status_code, json.loads(response.text).get('message'
+                                                                      ,''))
 
         time_line = self.__create_timeline(list_of_rules,
                                            response.text, valid_operator)
