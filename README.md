@@ -20,7 +20,6 @@
       -- schema
           -- config
       -- services
-          -- error_handlers
           -- rule_function_aggregation_factory
           -- weather_access
   -- venv
