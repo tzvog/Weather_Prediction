@@ -1,4 +1,9 @@
 <body>
+
+  <h1>Description</h1>
+   <p>
+   This API enables a user to put in coordinates in the world and get a prediction for the weather within the next 24 hours 
+   </p>
   <h1>Install Requirements</h1>
   <ol>
   <li>flask</li>
