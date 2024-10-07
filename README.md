@@ -34,6 +34,13 @@
   in your terminal make sure you are withing the tommorow_io_test directory and 
   use the command "python app.py" and start invoking the API</p>
 
+  <h1>Usage of the Endpoint</h1>
+  <p> This API allows users to check for specific weather conditions within the next 72 hours. The API allows users to specify the weather conditions in the form
+of comparison statements such as "temperature > 30" and "wind < 30" and an operator, such as
+"AND" or "OR", indicating how the conditions should be evaluated. The API returns a timeline that
+displays whether or not the specified conditions are expected to occur in the next 72 hours.
+for example a valid invocation of the endpoint would be weather-conditions?location=40.7,-73.9&rule=temperature>30&operator=OR</p>
+
   <h1>Assumptions</h1>
   <ol>
     <li>Access to the token will not be stored locally within a config file. Just for this demo, it has been.</li>

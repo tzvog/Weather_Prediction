@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="25ebcdcf-343d-4686-b6ff-5e52831a82be" name="Default Changelist" comment="move">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tomorrow_io_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tomorrow_io_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,21 +25,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tzvog&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tzvog/Weather_Prediction.git&quot;,
+    &quot;accountId&quot;: &quot;02b2d14a-d443-4a79-8d29-3562987f8ab5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2SLLdZUne0AaxJiCzeSOwhEiI4R" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/t-dog/OneDrive/Desktop/docker_test/python-docker-example&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\t-dog\PycharmProjects\tomorrow_io_test\api\services" />
@@ -43,6 +68,7 @@
   <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="weather_access (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tomorrow_io_test" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -65,6 +91,7 @@
     </configuration>
     <configuration name="weather_access" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tomorrow_io_test" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -89,6 +116,7 @@
       <module name="tomorrow_io_test" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -104,6 +132,7 @@
       <module name="tomorrow_io_test" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -116,10 +145,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.tomorrow_io_test" />
-      <item itemvalue="Flask server.Flask (app.py)" />
-      <item itemvalue="Python.weather_access" />
       <item itemvalue="Python.weather_access (1)" />
+      <item itemvalue="Python.weather_access" />
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Flask server.tomorrow_io_test" />
     </list>
     <recent_temporary>
       <list>
@@ -129,6 +158,15 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.428" />
+        <option value="bundled-python-sdk-80e8e15d2b92-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.428" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -147,6 +185,7 @@
       <workItem from="1689235904118" duration="86000" />
       <workItem from="1689680779607" duration="2775000" />
       <workItem from="1689709230449" duration="48000" />
+      <workItem from="1728307573326" duration="896000" />
     </task>
     <task id="LOCAL-00001" summary="api call works">
       <created>1688929682186</created>
@@ -166,94 +205,12 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="api call works" />
     <MESSAGE value="change the error code" />
     <option name="LAST_COMMIT_MESSAGE" value="change the error code" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1689009810010">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1689009810010" />
-    <state x="306" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1689009601074">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="306" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1689009601074" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1691942492504">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1691942492504" />
-    <state width="1237" height="161" key="GridCell.Tab.0.bottom" timestamp="1689235990734">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689235990734" />
-    <state width="1237" height="161" key="GridCell.Tab.0.center" timestamp="1689235990734">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1689235990734" />
-    <state width="1237" height="161" key="GridCell.Tab.0.left" timestamp="1689235990734">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1689235990734" />
-    <state width="1237" height="161" key="GridCell.Tab.0.right" timestamp="1689235990734">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015399617" />
-    <state width="1237" height="161" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1689235990734" />
-    <state width="1237" height="50" key="GridCell.Tab.1.bottom" timestamp="1689235855377">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="476" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="50" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1689235855377" />
-    <state width="1237" height="50" key="GridCell.Tab.1.center" timestamp="1689235855377">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="476" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="50" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1689235855377" />
-    <state width="1237" height="50" key="GridCell.Tab.1.left" timestamp="1689235855377">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="476" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="50" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1689235855377" />
-    <state width="1237" height="50" key="GridCell.Tab.1.right" timestamp="1689235855377">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="476" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1689015376098" />
-    <state width="1237" height="50" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1689235855377" />
-    <state x="429" y="52" key="RollbackChangesDialog" timestamp="1689228870841">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="429" y="52" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1689228870841" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1688924314965">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1688924314965" />
-    <state x="233" y="62" key="Vcs.Push.Dialog.v2" timestamp="1691942495573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="62" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1691942495573" />
-    <state width="648" height="348" key="XDebugger.FullValuePopup" timestamp="1689063136122">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="648" height="348" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1689063136122" />
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1691942352464">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1691942352464" />
-    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1689228524791">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1689228524791" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1689231124367">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1689231124367" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -266,9 +223,10 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tomorrow_io_test$WeatherAccess.coverage" NAME="WeatherAccess Coverage Results" MODIFIED="1689006696129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/services" />
+    <SUITE FILE_PATH="coverage/Weather_Prediction$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1728308169829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tomorrow_io_test$tomorrow_io_test.coverage" NAME="tomorrow_io_test Coverage Results" MODIFIED="1688925223186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/tomorrow_io_test$weather_access__1_.coverage" NAME="weather_access (1) Coverage Results" MODIFIED="1689188468083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/services" />
     <SUITE FILE_PATH="coverage/tomorrow_io_test$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1689235924958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tomorrow_io_test$WeatherAccess.coverage" NAME="WeatherAccess Coverage Results" MODIFIED="1689006696129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/services" />
+    <SUITE FILE_PATH="coverage/tomorrow_io_test$weather_access__1_.coverage" NAME="weather_access (1) Coverage Results" MODIFIED="1689188468083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/services" />
   </component>
 </project>
